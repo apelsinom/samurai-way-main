@@ -1,10 +1,10 @@
 import React from 'react';
 import s from "../Dialogs.module.css";
 import {NavLink} from "react-router-dom";
+import {UserDialogType} from "../Dialogs";
 
-type PropsType = {
-    id:string
-    name:string
+type PropsType = UserDialogType & {
+
 }
 export const DialogItem = (props:PropsType) => {
     const path = '/messages/' + props.id
